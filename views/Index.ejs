@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+
+    <header>  
+        
+        <div class="upper-nav">
+
+            <div id="logo">
+                <div id="logo-img">
+                    <img src="/Image/logo.png" alt=" ">
+                </div>
+                <h1>ZoroMart</h1>
+            </div>
+    
+            <div class="serach">
+                <input type="text" placeholder="Search " id="search-bar" >
+                <button value="" id="search-btn" onclick="location.href='/products' , rrr() "><i class="fa-solid fa-magnifying-glass"></i></button>
+                
+            </div>
+    
+    
+            
+    
+            <div class="servic-no">
+                <p> Customer service No:<br>
+                    9100000000
+                </p>
+            </div>
+
+        </div>
+
+       <div class="lower-nav">
+            <nav>
+                
+                <div class="container-nav">
+                    <a href="#Home">Home</a>
+                    <a href="#">AAAA</a>
+                    <a href="#">AAAA</a>
+                    <a href="/login">LogIn</a>
+                </div>
+                
+            </nav>
+       </div>
+
+
+    </header>
+
+   <div class="Home" id="Home">
+        <div class="slider1">
+            <div class="carusal">
+
+              <div class="Quote">
+                <h1 id="Quotes"> 
+                    &ldquo; Wake up to reality! Nothing ever goes as planned in this accursed world. The longer you live, the more you realize that the only things that truly exist in this reality are merely pain. suffering and futility. &rdquo;
+                   </h1>
+    
+                   <br>
+                   <br>
+    
+                   <h3 id="Quote_by"> MADRA UCHIHA (NARUTO) </h3>
+              </div>
+
+            </div>
+            <div class="coverimg">
+
+            </div>
+
+        </div>
+        <br><hr>
+
+
+
+
+        <!-- CHARAUSAL -->
+
+
+        
+
+
+        <br><hr>
+
+
+
+        <!-- PRODUCT CATAGORY -->
+
+
+
+        <div class="product-section">
+            <% const products_catogary_name = ['Anime T-shirts', 'Mobile Cover', 'keychain', 'Hoodies', 'Anime Figures']; %>
+            <% const products_catogary_id = ['tshirt', 'mobilecover', 'keychain', 'hoodie', 'animeFigure']; %>
+            <% const products_catogary = ['tshirts', 'mobile-cover', 'keychain', 'hoodies', 'anime-figures']; %>
+            <% products_catogary.forEach(function(product, index) { %>
+
+                <% const name = products_catogary_name[index]; %>
+                <% const Cid = products_catogary_id[index]; %>
+
+
+                <div class="product-cardm" onclick="product_cat(this)" id=" <%=Cid%>" >
+                    <a href="/products" class="product-card" id="<%= product  %>">
+                        <h1 class="product-text"><%= name %></h1>
+                    </a>
+                    <h1 class="section-name"> <%= name %></h1>
+                </div>
+            <% }); %>
+
+           
+            
+        </div>
+
+   </div>  
+
+  
+
+</body>
+
+<script src="/ChangeQuotes.js"></script>
+
+</html>
