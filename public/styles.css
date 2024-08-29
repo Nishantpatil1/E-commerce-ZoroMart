@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    border: border-box;
+   
+    
+}
+
+
+/* NAVIGATION BAR */
+
+
+header{
+    padding:1vh;
+    background-color: rgb(3, 44, 22);
+     
+}
+
+.upper-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#logo-img{
+    display: inline-block;
+    background-image: url("Image/logo.png");
+   
+}
+
+img{
+    height: 9vh;
+    width: 11vh;
+}
+
+#logo{
+    display: inline-block;
+    color: rgb(4, 159, 43);
+    display:flex;
+    align-items: center;
+    height: 7vh;
+    font-size: 25px;
+}
+
+
+.serach{
+    
+    display: flex;
+    align-items: center;
+    height: 4vh;
+    overflow: hidden;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius:7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+#search-bar{
+   
+    border-top-left-radius: 7px;
+    border-bottom-left-radius:7px;
+    height: 4vh;
+    width: 55vh;
+    font-weight: 600;
+    font-size: 2vh;
+    border: 2px solid transparent;
+    outline: none;
+}
+
+#search-bar::placeholder{
+    color: rgb(4, 159, 43);
+}
+
+#search-btn{
+    
+    height: 4.5vh;
+    width: 10vh;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border: 2px solid transparent;
+    
+}
+
+#search-btn:hover{
+    background-color:rgb(1, 254, 64) ;
+    box-shadow: 0 0 10px rgb(1, 254, 64);
+}
+
+.servic-no{
+    color: rgb(4, 159, 43) ;
+}
+
+.lower-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    display: inline-block;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    margin-right: 5vh;
+    width: 55vh;
+    height: 6vh;
+}
+
+.container-nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:5vh;
+    width: 15vh;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid rgb(4, 159, 43);
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(4, 159, 43);
+} 
+
+.container-nav a:hover{
+    background-color:rgb(1, 254, 64) ;
+    box-shadow: 0 0 10px rgb(1, 254, 64);
+    border: 2px solid transparent;
+    color: black;
+}
+
+
+
+
+
+/* Home  */
+
+.Home{
+    background-color:lightgray;
+}
+
+
+.slider1{
+    display: flex;
+}
+
+.carusal{
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#Quotes{
+    color: rgb(4, 159, 43) ;
+    font-size: 30px;
+}
+
+.coverimg{
+    background-image: url("Image/coverzoro.png");
+    background-size: cover;
+    z-index: 2;
+    height: 400px;
+    width: 600px;
+}
+
+
+
+/* CARAUSAL */
+
+
+
+
+
+
+
+
+/* Product Section */
+
+
+.product-section{
+    margin: 7vh 0;
+    width: 100%;
+    min-height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product-cardm{
+    width: 40vh;
+    height: 60vh;
+    background-color: rgb(2, 40, 20);
+    margin: 20px 40px;
+    border-radius: 10px;
+    box-shadow:  3px -3px 12px  black;
+}
+
+.product-card{
+    width: 40vh;
+    height: 50vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(2, 40, 20);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;  
+}
+
+.product-card:hover{
+    filter: grayscale(60%);
+    opacity: 60%;
+}
+
+.product-text{
+    color:white;
+    opacity: 0;
+}
+
+.product-card:hover .product-text{
+    opacity: 100%;
+}
+
+.section-name{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    color: rgb(4, 159, 43);
+}
+
+#tshirts{
+    background-image: url("Image/covertshirt.jpeg");
+    background-size: cover;
+}
+
+#mobile-cover{
+    background-image: url("Image/goku-mobile-cover.png");
+    background-size: cover;
+}
+
+#keychain{
+    background-image: url("Image/keychain.jpg");
+    background-size: cover;
+}
+
+#hoodies{
+    background-image: url("Image/hoodie.jpg");
+    background-size: cover;
+}
+
+#anime-figures{
+    background-image: url("Image/zoro-figure.jpg");
+    background-size: cover;
+}
+
